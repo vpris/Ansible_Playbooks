@@ -1,0 +1,9 @@
+[masters]
+master ansible_host=your_host_master ansible_user=your_ansible_user
+
+[workers]
+worker1 ansible_host=your_host_worker1 ansible_user=your_ansible_user
+worker2 ansible_host=your_host_worker2 ansible_user=your_ansible_user
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3

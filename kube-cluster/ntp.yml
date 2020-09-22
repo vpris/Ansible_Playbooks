@@ -1,0 +1,19 @@
+- hosts: all
+  become: yes
+  tasks:
+   - name: Install ntpdate
+     apt:
+       name: ntpdate
+       state: present
+       update_cache: true
+  
+   - name: Set-ntp off
+     shell: timedatectl set-ntp off
+
+   - name: Install ntp
+     apt:
+       name: ntp
+       state: present
+
+   - name: Set timezone MSK
+     shell: timedatectl set-timezone Europe/Moscow
