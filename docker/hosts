@@ -1,0 +1,5 @@
+[hosts]
+gitlab ansible_host=192.168.88.26 ansible_user=vprisyazhnikov
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
